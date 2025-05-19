@@ -1,0 +1,6 @@
+BEGIN;
+
+ALTER TABLE tasks DROP CONSTRAINT fk_user;
+ALTER TABLE tasks DROP COLUMN user_id;
+
+COMMIT;

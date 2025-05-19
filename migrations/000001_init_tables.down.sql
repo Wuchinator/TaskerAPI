@@ -1,0 +1,4 @@
+BEGIN;
+DROP TABLE IF EXISTS tasks;
+DROP TABLE IF EXISTS schema_migrations;
+COMMIT;
