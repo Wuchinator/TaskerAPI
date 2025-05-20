@@ -27,28 +27,38 @@
  
 ## Project Structure
 ```
-go-tasker/
-├── cmd/
-│   └── api/
-│       └── main.go         
-├── internal/
-│   ├── handlers/          
-│   │   ├── auth.go          
-│   │   └── tasks.go         
-│   ├── models/            
-│   │   ├── task.go       
-│   │   └── user.go       
-│   ├── repository/        
-│   │   ├── postgres.go    
-│   │   └── interface.go   
-│   ├── service/         
-│   │   ├── auth.go         
-│   │   └── tasks.go        
-│   └── middleware/     
-│       └── auth.go       
-├── migrations/           
-│   ├── 0001_init.up.sql    
-│   └── 0001_init.down.sql  
-├── .env.example      
-├── go.mod 
-└── README.md    
+📁 go-tasker-api
+├── 📁 cmd
+│   └── 📁 api
+│       └── main.go             
+├── 📁 docs
+│   ├── docs.go
+│   ├── swagger.json
+│   └── swagger.yaml
+├── 📁 internal                 
+│   ├── 📁 config               
+│   │   └── config.go
+│   ├── 📁 errors               
+│   │   └── errors.go
+│   ├── 📁 handlers             
+│   │   ├── auth.go
+│   │   └── tasks.go
+│   ├── 📁 logger             
+│   │   └── logger.go
+│   ├── 📁 middleware           
+│   │   ├── auth.go
+│   │   └── middleware.go
+│   ├── 📁 models              
+│   │   ├── task.go
+│   │   └── user.go
+│   ├── 📁 repository           
+│   │   ├── db.go
+│   │   ├── interface.go      
+│   │   ├── memory.go         
+│   │   ├── postgres.go       
+│   │   └── user.go
+│   └── 📁 service             
+│       ├── auth.go
+│       └── tasks.go
+├── 📁 migrations
+├── 📁 static
