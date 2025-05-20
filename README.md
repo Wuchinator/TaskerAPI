@@ -30,25 +30,25 @@
 go-tasker/
 ├── cmd/
 │   └── api/
-│       └── main.go          # Entry point
+│       └── main.go         
 ├── internal/
-│   ├── handlers/            # HTTP handlers
-│   │   ├── auth.go          # Auth endpoints
-│   │   └── tasks.go         # Task endpoints
-│   ├── models/              # Data models
-│   │   ├── task.go          # Task model  
-│   │   └── user.go          # User model
-│   ├── repository/          # Database layer
-│   │   ├── postgres.go      # PostgreSQL impl
-│   │   └── interface.go     # Repository interfaces
-│   ├── service/             # Business logic  
-│   │   ├── auth.go          # Auth service
-│   │   └── tasks.go         # Task service
-│   └── middleware/          # HTTP middleware
-│       └── auth.go          # JWT auth  
-├── migrations/              # Database migrations
-│   ├── 0001_init.up.sql     # Initial schema
-│   └── 0001_init.down.sql   # Rollback
-├── .env.example             # Env template
-├── go.mod                   # Go dependencies
-└── README.md                # This file
+│   ├── handlers/          
+│   │   ├── auth.go          
+│   │   └── tasks.go         
+│   ├── models/            
+│   │   ├── task.go       
+│   │   └── user.go       
+│   ├── repository/        
+│   │   ├── postgres.go    
+│   │   └── interface.go   
+│   ├── service/         
+│   │   ├── auth.go         
+│   │   └── tasks.go        
+│   └── middleware/     
+│       └── auth.go       
+├── migrations/           
+│   ├── 0001_init.up.sql    
+│   └── 0001_init.down.sql  
+├── .env.example      
+├── go.mod 
+└── README.md    
