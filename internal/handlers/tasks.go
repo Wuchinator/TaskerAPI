@@ -40,7 +40,7 @@ func (h *TaskHandler) GetTask(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	
-	task, err := h.service.GetByID(userID, taskID) // Теперь передаем оба параметра
+	task, err := h.service.GetByID(userID, taskID) 
 	if err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
@@ -110,7 +110,7 @@ func (h *TaskHandler) DeleteTask(w http.ResponseWriter, r *http.Request) {
 		return
 	}
 	
-	if err := h.service.Delete(userID, taskID); err != nil { // Теперь передаем оба параметра
+	if err := h.service.Delete(userID, taskID); err != nil {
 		http.Error(w, err.Error(), http.StatusInternalServerError)
 		return
 	}
